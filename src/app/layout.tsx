@@ -3,6 +3,7 @@ import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { UiEnhancements } from "@/components/ui-enhancements";
 
 const inter = Inter({
   variable: "--font-sans",
@@ -31,9 +32,10 @@ export default function RootLayout({
     >
       <body className="font-sans min-h-full flex flex-col">
         <Header />
-        <main className="flex-1 shrink-0">
+        <main className="flex-1 shrink-0 pt-16 md:pt-24">
           {children}
         </main>
+        <UiEnhancements />
         <Footer />
       </body>
     </html>

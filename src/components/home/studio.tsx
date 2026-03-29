@@ -29,7 +29,7 @@ export function StudioSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="flex overflow-x-auto snap-x snap-mandatory px-6 md:px-0 pb-8 mt-12 md:mt-16 -mx-6 md:mx-0 hide-scrollbar md:grid md:grid-cols-3 gap-6 md:gap-8">
           {studioImages.map((img, idx) => (
             <motion.div
               key={idx}
@@ -37,7 +37,7 @@ export function StudioSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.7, delay: idx * 0.2 }}
-              className="relative aspect-[4/3] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow group"
+              className="relative aspect-[4/3] w-[85vw] md:w-auto shrink-0 snap-center rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow group"
             >
               <Image
                 src={img.src}

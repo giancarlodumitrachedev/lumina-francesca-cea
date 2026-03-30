@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { getDemoParams } from "@/lib/demo-params";
 import { SmartLink } from "@/components/smart-link";
+import { getDemoParams } from "@/lib/demo-params";
 
 export const metadata = { title: "Chi Sono | Lumina Psicologo" };
 
@@ -37,18 +37,33 @@ export default async function ChiSonoPage({
               {params.name} <span className="text-foreground/50 font-normal">| {params.fieldDisplay}</span>
             </h2>
             <p className="mb-4">
-              La mia passione per la psicologia nasce dal desiderio profondo di comprendere l'essere umano in tutte le sue sfaccettature. 
-              Nel corso della mia carriera, ho affinato un approccio terapeutico che integra competenze cliniche rigorose con una reale 
-              ed empatica presenza relazionale.
+              Ognuno di noi nasce e cresce all&apos;interno di un contesto, caratterizzato fin da subito da relazioni interpersonali che contribuiscono a farci vivere un certo tipo di esperienze e a formare la nostra identità.
             </p>
             <p className="mb-4">
-              Mi sono specializzato attraverso anni di studio e pratica clinica, sviluppando una solida esperienza nel trattamento 
-              delle {params.fieldDisplay.toLowerCase()} e delle difficoltà emotive in generale. Il mio obiettivo principale è fornire uno spazio sicuro dove 
-              i pazienti possano esplorare se stessi senza il timore di essere giudicati.
+              Da quelle familiari a quelle con gli educatori, passando per amici, partner e colleghi di lavoro: ognuno dei rapporti che viviamo ci forgia e, allo stesso tempo, rispecchia le dinamiche che abbiamo sperimentato fino a quel momento. Anche le emozioni che proviamo e i pensieri che concepiamo sono influenzati dal contesto relazionale in cui siamo cresciuti.
             </p>
-            <p className="mb-8">
-              Lavorando insieme, cercheremo non solo di alleviare il sintomo o il disagio immediato, ma di rintracciare le radici 
-              profonde delle dinamiche interiori, promuovendo un cambiamento autentico e duraturo.
+            <p className="mb-4">
+              Per superare momenti difficili e raggiungere un maggiore benessere bisogna comprendere quali siano gli elementi che non ci rappresentano più e quali i bisogni insoddisfatti su cui lavorare. In base a questo si vanno a individuare le risorse necessarie per farlo, che sono già dentro di noi anche se spesso non ne siamo consapevoli.
+            </p>
+            <p className="mb-4">
+              Il nostro percorso insieme si baserà su accoglienza, ascolto e comprensione e avrà proprio l&apos;obiettivo di accompagnarti verso una nuova interpretazione di ciò che stai sperimentando. Non solo: sviluppando nuovi pensieri e comportamenti, potrai vivere il tuo presente in maniera più soddisfacente e serena.
+            </p>
+            <p className="mb-8 font-medium">
+              Daremo il via a un cammino che ti condurrà su strade mai percorse prima, verso il benessere che desideri.
+            </p>
+
+            <h3 className="text-2xl font-medium text-secondary-foreground mb-4">Competenze e Metodologia</h3>
+            <p className="mb-4">
+              Sono una psicologa di orientamento sistemico-relazionale. Mi occupo di consulenze e sostegno psicologico rivolti a giovani, adulti, coppie e famiglie. La mia professionalità verrà messa a servizio della persona in un luogo sicuro e confortevole nel quale potersi confrontare, raccontare e, soprattutto, venire ascoltati e supportati.
+            </p>
+            <p className="mb-4">
+              Dal 2020 collaboro inoltre con alcuni enti gestori accreditati con il Sistema Sanitario Nazionale per le cure domiciliari.
+            </p>
+            <p className="mb-4">
+              Il percorso terapeutico è un processo di crescita e scoperta di sé che permette di migliorare il benessere emotivo, affrontare difficoltà personali o relazionali e promuovere la crescita personale. In un certo senso, la terapia permette di cocostruire delle &quot;lenti&quot; attraverso cui è possibile adottare una prospettiva diversa e avviare un cambiamento emotivo e relazionale.
+            </p>
+            <p className="mb-8 font-medium text-primary">
+              Sono disponibile per percorsi terapeutici individuali, di coppia e familiari, in presenza o online.
             </p>
             
             <SmartLink
